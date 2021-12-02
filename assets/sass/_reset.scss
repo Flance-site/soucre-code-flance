@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: #4A5CFF;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+ul,
+p {
+    margin: 0;
+}

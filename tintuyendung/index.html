@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:site_name" content="flance.site">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:type" content="website">
+    <title>Flance - Tin tuyển dụng</title>
+    <meta content="Flance - Trang tuyển dụng" property="og:title" />
+    <meta content="Flance - Trang tuyển dụng" property="twitter:title" />
+    <meta name="keywords" content="flance, tìm việc làm, freelancer, flance tim viec" />
+    <meta name="description"
+        content="Flance - Trang đăng tin tuyển dụng, rất nhiều công việc được các nhà tuyển dụng đăng tin." />
+    <meta property="og:url" content="https://flance.site" />
+    <meta property="og:image"
+        content="https://lh3.googleusercontent.com/7p7ZKVisAnGbeR3mODKhD4od6bBO3n7XT7ymg0ivdh9HwpRlh5tps5Axt5Oxuk1-jZ2foFGVPhlf2r4C1A-qtFHfUPneA62u2PDYxAE3i-6RlGm-ncnGLIPiQiwChogQp0T2ErkVE4lr9E8exqqyDvN9quHjqRPSFiMQ0rHXk47PJXXFUJ1GJJdCo8UOkaGgYFdV9mPSwFu-xDy-h7imQDXENK3yfjcoZBOLNMrxj7l4dElareOKbVKH9hDazUp-QdwuB0CSapNytPU1EWEO09fqG23QokO8S8QMebooscqCSHNX-fUlFb_lpF57GK8Du-cSb50xjnICqas18uMC7pAweNtcbRUEuJEMWBq8SrtpdS5sEHM9bPeA2RdBJzHvgTSGvxgPe3_UYU9nXoygTcH7v-Ow6ERFmCswdVOVRpgjR4Js8Se_LmSUTYdiHn77EP1PegM7J_VEIb-VbHIj9s0Y5zXcXMhDSgWB6Xss9Vwgt8IFd1U0lTElRyrP1JwwcLSU7DKxaaaQjiRbigJi-bTKUUxs-eTI4XgfF-y1t6OvtY8FXuqDuZu-0uysrQLBFtIIF5Q0vrzBKlI3vNHz8epitw-bQ7BxZl0n0lX2OdOJqmHH3W_TFWnJ3bBFeXiVfuct1PhYGC9ljkNix3Sj8QH6Bf6ERVzf69JugaCLCbhIgjl0QK3w9Xsg1303UT0jVeugEKu2yxtB0B7T4xRVI8gm=w1200-h630-no?authuser=0" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" ; />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5f8ac9">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <!-- links ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- links bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- link owl carousel -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <!-- link css files -->
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <!-- <link rel="stylesheet" href="./assets/sass/app.css"> -->
+</head>
+
+<body id="body-main">
+    <header>
+        <div id="navsbar" class="header container-fluid">
+            <div class="container navs">
+                <div class="navs-logo"><a href="https://www.flance.site"><img src="./assets/images/Logo.svg" alt=""></a>
+                </div>
+                <div class="navs-logo d-mobile"><a href="https://www.flance.site"><img
+                            src="./assets/images/Logo-mobile.svg" alt=""></a></div>
+                <div id="navlinks" class="navs-links">
+                    <button data-nav-close class="icon-close-nav">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                    <ul>
+                        <li><a class="navs-links-item ative" href="">Tìm công việc</a></li>
+                        <li><a class="nav-links-item" href="">Cuộc thi</a></li>
+                        <li><a class="nav-links-item" href="">Bảng xếp hạng</a></li>
+                        <li><a class="nav-links-item" href="">Doanh nghiệp</a></li>
+                        <!-- dropdown-menu -->
+                        <div class="navs-links-dropdown-1 ">
+                            <div class="image-item">
+                                <div class="title">tìm công việc</div>
+                                <div class="span">Hầu hết các công việc đều được Flance tin tưởng và chứng nhận.
+                                </div>
+                                <div class="butn">
+                                    <a href="">Xem doanh nghiệp</a>
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                                <div class="butn">
+                                    <a href="">Lý do tin tưởng chúng tôi</a>
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="content-item-links">
+                                    <ul>
+                                        <li><a class="title" href="">Lập trình</a></li>
+                                        <li><a class="span" href="">App Android</a></li>
+                                        <li><a class="span" href="">App IOS</a></li>
+                                        <li><a class="span" href="">App Desktop</a></li>
+                                        <li><a class="span" href="">Full-Stack</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a class="title" href="">Thiết kế</a></li>
+                                        <li><a class="span" href="">App điện thoại</a></li>
+                                        <li><a class="span" href="">App Desktop</a></li>
+                                        <li><a class="span" href="">Logo - 2D</a></li>
+                                        <li><a class="span" href="">Sách - Ảnh</a></li>
+                                        <li><a class="span" href="">Website</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a class="title" href="">Hội họa</a></li>
+                                        <li><a class="span" href="">Digital</a></li>
+                                        <li><a class="span" href="">Decor</a></li>
+                                        <li><a class="span" href="">Kiến trúc</a></li>
+                                        <li><a class="span" href="">Thời trang</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a class="title" href="">Tạo nội dung</a></li>
+                                        <li><a class="span" href="">Kịch bản</a></li>
+                                        <li><a class="span" href="">Bài đăng MXH</a></li>
+                                        <li><a class="span" href="">E-Book</a></li>
+                                        <li><a class="span" href="">Blog - Website</a></li>
+                                        <li><a class="span" href="">Diễn văn</a></li>
+                                    </ul>
+                                </div>
+                                <div class="content-item-butn">
+                                    <a href="">Xem tất cả các công việc</a>
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navs-links-dropdown-2  ">
+                            <div class="image-item">
+                                <div class="title">Tổ Chức Cuộc Thi</div>
+                                <div class="span">Flance tạo các cuộc thi giúp mọi người có cơ hội thử sức. Mang lại cơ
+                                    hội rèn luyện, nâng cao trình độ, cũng là nơi để
+                                    giao lưu, học hỏi.
+                                </div>
+                                <div class="butn">
+                                    <a href="">
+                                        <ion-icon name="logo-google"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="content-item-links">
+                                    <ul>
+                                        <li><a class="title" href="">Lập trình</a></li>
+                                        <li><a class="span" href="">Code War 2021</a></li>
+                                        <li><a class="span" href="">CodeRacing</a></li>
+                                        <li><a class="span" href="">IA Challenge</a></li>
+                                        <li><a class="span" href="">Brand-IT</a></li>
+                                        <li><a class="span" href="">FlastCoder</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a class="title" href="">Thiết kế</a></li>
+                                        <li><a class="span" href="">UI-UX Design</a></li>
+                                        <li><a class="span" href="">UI Challenge</a></li>
+                                        <li><a class="span" href="">Flance Icons</a></li>
+                                        <li><a class="span" href="">Font Design</a></li>
+                                        <li><a class="span" href="">Thiết kế đồ họa</a></li>
+                                    </ul>
+                                </div>
+                                <div class="content-item-butn">
+                                    <a href="">Xem tất cả các cuộc thi</a>
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <img src="./assets/images/navbar/img-1.png" alt="">
+                                <div class="post-item-content">
+                                    <div class="tag">Thử thách</div>
+                                    <div class="title">Cuộc thi Code War 2021 sắp diễn ra tại TP Hồ Chí Minh.</div>
+                                    <div class="span">Cuộc thi Code War 2021 Là một sân chơi lập trình quốc tế quy mô
+                                        lớn cho sinh viên quy tụ đông đảo các tài năng công nghệ thông tin đến
+                                        từ nhiều trường đại học hàng đầu của Hà Nội và Thành phố Hồ Chí Minh.</div>
+                                    <div class="butn">
+                                        <a href="">Đăng ký ngay</a>
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navs-links-dropdown-3  ">
+                            <div class="image-item">
+                                <div class="title">Bảng Xếp Hạng</div>
+                                <div class="span">Flance tạo các cuộc thi giúp mọi người có cơ hội thử sức. Mang lại cơ
+                                    hội rèn luyện, nâng cao trình độ, cũng là nơi để
+                                    giao lưu, học hỏi.
+                                </div>
+                                <div class="butn">
+                                    <a href="">Xem bảng xếp hạng</a>
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="content-item-links">
+                                    <ul>
+                                        <li><a class="title" href="">Lập trình</a></li>
+                                        <li><a class="span" href="">Top chuyên gia</a></li>
+                                        <li><a class="span" href="">Top 10 Coder tuần</a></li>
+                                        <li><a class="span" href="">Top 10 Coder tháng</a></li>
+                                        <li><a class="span" href="">Top 10 dự án tuần</a></li>
+                                        <li><a class="span" href="">Top 10 dự án tháng</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a class="title" href="">Thiết kế</a></li>
+                                        <li><a class="span" href="">Top chuyên gia</a></li>
+                                        <li><a class="span" href="">UI designer của tháng</a></li>
+                                        <li><a class="span" href="">Dự án tốt nhất năm</a></li>
+                                        <li><a class="span" href="">Bài thi đoạt giải</a></li>
+                                    </ul>
+                                </div>
+                                <div class="content-item-butn">
+                                    <a href="">Xem tất cả hạng mục</a>
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div class="title">Giải Thưởng</div>
+                                <div class="span">Người đứng đầu hạng mục sẽ được tặng các phần thưởng có giá trị</div>
+                                <div class="tick">
+                                    <div class="item">
+                                        <div class="icon">
+                                            <ion-icon name="checkmark-outline"></ion-icon>
+                                        </div>
+                                        <p>Tặng một tên miền <b>.com</b> </p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <ion-icon name="checkmark-outline"></ion-icon>
+                                        </div>
+                                        <p><b>20 triệu đồng</b> tiền mặt</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <ion-icon name="checkmark-outline"></ion-icon>
+                                        </div>
+                                        <p>Có cơ hội làm việc ở <b>Netflix</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navs-links-dropdown-4  ">
+                            <div class="image-item">
+                                <div class="title">DOANH NGHIỆP</div>
+                                <div class="span">Flance là cộng đồng hàng đầu Việt Nam về chia sẻ, phát triển và thuê
+                                    người làm tự do.
+                                </div>
+                                <div class="butn-icon">
+                                    <a href="">
+                                        <ion-icon name="logo-google"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="content-item-links">
+                                    <ul>
+                                        <li><a class="title" href="">Doanh nghiệp</a></li>
+                                        <li><a class="span" href="">Giới Thiệu</a></li>
+                                        <li><a class="span" href="">Điều khoản</a></li>
+                                        <li><a class="span" href="">Nhãn hiệu</a></li>
+                                        <li><a class="span" href="">Bảo mật</a></li>
+                                        <li><a class="span" href="">Blog</a></li>
+                                        <li><a class="span" href="">Khác</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="post-item">
+                                <div class="item">
+                                    <div class="item-banner"><img src="./assets/images/navbar/blog-1.jpg" alt=""></div>
+                                    <div class="item-content">
+                                        <div class="day">28 Tháng 11, 2021</div>
+                                        <div class="title">Dẫn đầu xu thế tìm việc online thời đại 4.0 - công nghệ tìm
+                                            việc.
+                                        </div>
+                                        <a href="">Đọc thêm</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item-banner"><img src="./assets/images/navbar/blog-2.jpg" alt=""></div>
+                                    <div class="item-content">
+                                        <div class="day">25 Tháng 10, 2021</div>
+                                        <div class="title">Cách xây dựng thế giới cho riêng bạn và gia đình</div>
+                                        <a href="">Đọc thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="background-menu"></div>
+
+                    </ul>
+                </div>
+                <div class="navs-butn">
+                    <a class="navs-butn-outline" href="https://www.flance.site/dangnhap">Đăng nhập</a>
+                    <a class="navs-butn-primary" href="https://www.flance.site/trangcanhan/@nguyenhamy">Profile</a>
+                    <button data-login-target='#bodylogin' class="navs-butn-primary login-open"
+                        href="https://www.flance.site/dangnhap">Bắt đầu</button>
+                    <button data-nav-target='#navlinks' class="icon-open-nav" id="iconopennav">
+                        <div class="icon-humber">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"
+                                fill="none">
+                                <path d="M1 1H19" stroke="#1F4062" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M1 6H19" stroke="#1F4062" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M1 11H19" stroke="#1F4062" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M1 16H19" stroke="#1F4062" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hero-post container">
+        <h1>Hãy bắt đầu tìm kiếm công việc</h1>
+        <p class="hero-span">Thể hiện tài năng của bạn chúng tôi sẽ giúp bạn tìm công việc phù hợp</p>
+        <div id="hero-search" class="search">
+            <ul>
+                <li class="ative">Lập trình</li>
+                <li>Thiết kế</li>
+                <li>Họa sĩ</li>
+                <li>Viết nội dung</li>
+            </ul>
+            <hr>
+            <div class="label">
+                <div class="item">
+                    <p>Từ khóa công việc</p>
+                    <input type="text" placeholder="Nhập từ khóa...">
+                </div>
+                <div class="item">
+                    <p>Vị trí hiện tại</p>
+                    <input type="text" placeholder="Nhập vị trí...">
+                </div>
+                <div class="item">
+                    <a href="">Tìm kiếm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="post container">
+        <div class="space-100px"></div>
+        <div class="title-section">Danh sách công việc</div>
+        <div class="post-tag">
+            <div class="item">Thiết kế</div>
+            <div class="item">TP Hồ Chí Minh</div>
+        </div>
+        <div class="fiter">
+            <p>Hiển thị:</p>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+        </div>
+        <div class="post-main">
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="tag">
+                    <div class="dot"></div>
+                    <p>UI/UX</p>
+                </div>
+                <div class="title">UI-UX Designer (Mobile App/HTML5/CSS)</div>
+                <div class="infor">
+                    <div class="infor-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>TP Hồ Chí Minh</p>
+                    </div>
+                    <div class="infor-item">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <p>Full Time</p>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user-item">
+                        <div class="avt"><img src="./assets/images/post/logo-user.png" alt="">
+                        </div>
+                        <div class="name">FPT Software</div>
+                    </div>
+                    <div class="dot"></div>
+                    <div class="time">13 giờ trước</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="exam container">
+        <div class="space-100px"></div>
+        <div class="title-section">Cuộc thi sắp tới</div>
+        <div class="span-section">Cuộc thi do Flance tổ chức để tìm kiếm các tài năng trẻ</div>
+        <div class="exam-main">
+            <div class="item blue-item">
+                <div class="banner"><img src="./assets/images/post/exam1.png" alt=""></div>
+                <div class="content">
+                    <div class="title">FLance CoderRacing</div>
+                    <div class="local">TP Hồ Chí Minh</div>
+                    <div class="span">Cuộc thi do Flance tổ chức để tìm kiếm các tài năng trẻ. Cuộc thi do Flance tổ
+                        chức để tìm kiếm các tài năng trẻ</div>
+                    <a href="" class="butn blue">Đăng ký ngay</a>
+                </div>
+            </div>
+            <div class="item green-item">
+                <div class="banner"><img src="./assets/images/post/exam2.png" alt=""></div>
+                <div class="content">
+                    <div class="title">FLance UI Design</div>
+                    <div class="local">TP Hồ Chí Minh</div>
+                    <div class="span">Cuộc thi do Flance tổ chức để tìm kiếm các tài năng trẻ. Cuộc thi do Flance tổ
+                        chức để tìm kiếm các tài năng trẻ</div>
+                    <a href="" class="butn green">Đăng ký ngay</a>
+                </div>
+            </div>
+            <div class="item red-item">
+                <div class="banner"><img src="./assets/images/post/exam3.png" alt=""></div>
+                <div class="content">
+                    <div class="title">30D Drawing Challenge</div>
+                    <div class="local">TP Hồ Chí Minh</div>
+                    <div class="span">Cuộc thi do Flance tổ chức để tìm kiếm các tài năng trẻ. Cuộc thi do Flance tổ
+                        chức để tìm kiếm các tài năng trẻ</div>
+                    <a href="" class="butn red">Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="space-100px"></div>
+    </div>
+    <footer class="footer container-fluid">
+        <div class="space-100px"></div>
+        <div class="container">
+            <div class="row top">
+                <div class="col-md-3 left">
+                    <img src="./assets/images/Logo.svg" alt="">
+                    <div class="span">Flance là cộng đồng hàng đầu Việt Nam về chia sẻ, phát triển và thuê người làm tự
+                        do.</div>
+                    <div class="butn">
+                        <a href="">
+                            <ion-icon name="logo-google"></ion-icon>
+                        </a>
+                        <a href="">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-9 right">
+                    <div class="item">
+                        <div class="title">Công việc</div>
+                        <div class="span">Lập trình viên</div>
+                        <div class="span">Thiết kế viên</div>
+                        <div class="span">Họa sĩ</div>
+                        <div class="span">Viết nội dung</div>
+                    </div>
+                    <div class="item">
+                        <div class="title">Cuộc thi</div>
+                        <div class="span">UI/UX Design</div>
+                        <div class="span">CoderRacing</div>
+                        <div class="span">30D Drawing</div>
+                        <div class="span">Code War</div>
+                    </div>
+                    <div class="item">
+                        <div class="title">Công Ty</div>
+                        <div class="span">Giới thiệu</div>
+                        <div class="span">Điều khoản</div>
+                        <div class="span">Nhãn Hiệu</div>
+                        <div class="span">Bảo mật</div>
+                    </div>
+                    <div class="item">
+                        <div class="title">Khác</div>
+                        <div class="span">Blog</div>
+                        <div class="span">Trợ giúp</div>
+                        <div class="span">Challenge</div>
+                        <div class="span">Bảng xếp hạng</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row bottom">
+                <div class="col-md-6 copyright">
+                    <p>Copyright © 2021 Flance</p>
+                </div>
+                <div class="col-md-6 dieukhoan">
+                    <a href="">Điều khoản</a>
+                    <a href="">An toàn & bảo Mật</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- links script -->
+    <script src="jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <!-- thư viện slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- link script -->
+    <script src="./assets/script/app.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>

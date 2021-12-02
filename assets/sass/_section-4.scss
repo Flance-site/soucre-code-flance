@@ -1,0 +1,182 @@
+.section-4 {
+    padding-top: 30px;
+    padding-bottom: 130px;
+    background: rgba(21, 25, 64, 0.81);
+
+    &-left {
+        padding-right: 80px;
+
+        .title-section {
+            color: #fff;
+        }
+
+        .span-section {
+            color: #B2B2B2;
+        }
+    }
+
+    &-left-check {
+        .item {
+            display: flex;
+            padding-bottom: 20px;
+
+            .check {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 24px;
+                border-radius: 20px;
+                background-color: #36B37E;
+                color: #fff;
+                font-size: 16px;
+            }
+
+            .content {
+                padding-left: 15px;
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #fff;
+                    padding-bottom: 8px;
+                    letter-spacing: 1px;
+                }
+
+                .span {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #B2B2B2;
+                }
+            }
+        }
+    }
+
+    &-table-thongke {
+        background: #E4EEFF;
+        box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        width: 560px;
+        height: 485px;
+        padding: 55px;
+
+        &_check {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 40px 0;
+
+            .item {
+                display: flex;
+            }
+
+            .check {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                border-radius: 20px;
+                background-color: #36b37f1b;
+                color: #36B37E;
+                margin-top: 12px;
+                margin-right: 12px;
+            }
+
+            .title {
+                font-size: 36px;
+                font-weight: 700;
+            }
+
+            .span {
+                font-size: 14px;
+                font-weight: 400;
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+@include maxW(430px) {
+    .section-4 {
+        display: block;
+
+        &-left {
+            padding-right: 30px;
+            margin-bottom: 50px;
+
+            .span-section {
+                padding-right: 25px;
+            }
+            &-check .check {
+                min-width: 24px;
+                min-height: 24px;
+            }
+        }
+
+        &-table-thongke {
+            width: 100%;
+            padding: 25px 20px;
+
+            .title-section {
+                font-size: 26px;
+            }
+
+            .span-section {
+                padding-right: 20px;
+            }
+
+            &_check {
+                grid-gap: 27px;
+                .item {
+                    .content {
+                        .title {
+                            font-size: 24px;
+                        }
+
+                        .span {
+                            font-size: 11px;
+                        }
+                    }
+                    .check {
+                        margin-top: 5px;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include maxW(400px) {
+    .section-4 {
+        &-table-thongke {
+            height: 400px;
+            &_check {
+                grid-gap: 27px;
+                grid-template-columns: 1fr 1fr;
+                #rp-mobile {
+                    display: none;
+                    }
+                }
+        }
+    }
+}
+@include maxW(350px) {
+    .section-4 {
+        padding: 30px 0px 130px 0px;
+        &-table-thongke {
+            .title-section {
+                font-size: 24px;
+            }
+            .span-section {
+                padding-bottom: 30px;
+            }
+            height: 400px;
+            &_check {
+                grid-gap: 20px;
+                grid-template-columns: 1fr 1fr;
+                }
+        }
+    }
+}

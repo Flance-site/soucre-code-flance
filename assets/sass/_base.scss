@@ -1,0 +1,139 @@
+body {
+    font-family: 'PoppinsVn';
+    font-size: 14px;
+    color: #183B56;
+    background-color: #F9FBFE;
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    // overflow-y: hidden;
+}
+
+.scroll-down .header {
+    transform: translate3d(0, -100%, 0);
+    // opacity: ;
+}
+
+li {
+    list-style: none;
+}
+
+ul,
+p,
+hr {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #4A5CFF;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0;
+}
+
+
+
+
+
+.tag-blue {
+    display: inline-block;
+    padding: 6px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1565D8;
+    background-color: #3260d629;
+    border-radius: 20px;
+}
+
+.space-100px {
+    height: 100px;
+}
+
+.tag-green {
+    display: inline-block;
+    padding: 6px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #36B37E;
+    background-color: #36B37E10;
+    border-radius: 20px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.title-section {
+    font-size: 36px;
+    font-weight: 700;
+    color: $primary-color;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 48px;
+}
+
+.span-section {
+    font-size: 14px;
+    font-weight: 400;
+    color: $secondary-color;
+    padding-bottom: 45px;
+}
+
+@include maxW(620px) {
+    .container {
+        padding: 0px 10px;
+    }
+
+    body {
+        font-size: 12px;
+        overflow-x: hidden;
+    }
+}
+
+@include maxW(430px) {
+    .scroll-down .header {
+        transform: translate3d(0, -100%, 0);
+        // opacity: 0.8;
+    }
+
+    .scroll-up .header {
+        background-color: #ffffff;
+        // filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.07));
+    }
+
+    .container {
+        max-width: 365px;
+        // max-width: 100%;
+        padding: 0;
+    }
+
+    .tag-blue {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .space-100px {
+        height: 90px;
+    }
+
+    .span-section {
+        padding-right: 50px;
+    }
+}
+
+@include maxW(375px) {
+    .container {
+        padding: 10px;
+    }
+    .container-fluid {
+        padding: 10px;
+    }
+}

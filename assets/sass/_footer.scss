@@ -1,0 +1,145 @@
+.footer {
+    padding-top: 10px;
+    background-color: #FFFFFF;
+
+    .left {
+        .span {
+            font-size: 12px;
+            line-height: 20px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            padding-right: 30px;
+        }
+
+        .butn {
+            display: flex;
+
+            a {
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+                background-color: #5a718419;
+                margin-right: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+
+                ion-icon {
+                    color: #5A7184;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+            .title {
+                font-size: 18px;
+                font-weight: 700;
+                color: #404364;
+                padding-bottom: 5px;
+            }
+
+            .span {
+                color: #707070;
+                font-size: 16px;
+                font-weight: 400;
+                padding-top: 30px;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    hr {
+        margin-top: 65px;
+    }
+
+    .bottom {
+        padding: 30px 0px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        font-weight: 400;
+        color: #707070;
+    }
+
+    .dieukhoan {
+        display: flex;
+        justify-content: flex-end;
+        gap: 25px;
+
+        a {
+            font-size: 14px;
+            font-weight: 400;
+            color: #707070;
+        }
+    }
+}
+
+@include maxW(430px) {
+    .footer {
+        display: block;
+        .space-100px {
+            height: 40px;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                width: 150px;
+                margin: 0 auto;
+            }
+            .butn {
+                justify-content: center;
+                
+            }
+            .span {
+                margin-top: 20px;
+                padding: 0 20px;
+                text-align: center;
+            }
+        }
+        .right {
+            padding-top: 50px;
+            .item {
+                .span {
+                    display: none !important;
+                }
+                .title {
+                    font-size: 14px;
+                }
+            }
+        }
+        hr {
+            margin-top: 10px;
+        }
+        .bottom {
+            padding: 10px 0px;
+            .copyright {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                color: #70707079;
+            }
+            .dieukhoan {
+                justify-content: center;
+            }
+        }
+    }
+}

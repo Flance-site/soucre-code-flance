@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'font';
+@import 'mixin';
+@import 'reset';
+@import 'base';
+@import 'header';
+@import 'login';
+@import 'hero';
+@import 'section-1';
+@import 'section-2';
+@import 'section-3';
+@import 'section-4';
+@import 'section-5';
+@import 'section-6';
+@import 'section-7';
+@import 'footer';
+@import 'header-login';
+// @import 'login-form';
+@import 'profile';
+@import 'post';
+@import 'blog';
+@import 'setting';
+
+// sass --watch app.scss:app.css
+// sass --watch app.css:app.min.css --style compressed --scss

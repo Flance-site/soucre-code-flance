@@ -1,0 +1,200 @@
+.hero {
+    color: $primary-color;
+    position: relative;
+    background-color: #68686810;
+    margin-top: 80px;
+
+    .shape-1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+    }
+
+    .shape-2 {
+        position: absolute;
+        right: 5%;
+        bottom: -30%;
+    }
+
+    .tag-blue {
+        width: 280px;
+    }
+
+    h1 {
+        font-size: 56px;
+        font-weight: 700;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        padding-right: 65px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        color: $secondary-color;
+    }
+
+    .space-hero {
+        height: 216px;
+        width: 100%;
+    }
+
+    img {
+        margin: 40px 0px;
+        margin-right: -80px;
+    }
+
+    .search {
+        padding: 0px 30px;
+        position: absolute;
+        top: 440px;
+        width: 800px;
+        height: 185px;
+        background-color: #fff;
+        z-index: 3;
+        border-radius: 0px 20px 20px 20px;
+
+        ul {
+            display: flex;
+            gap: 32px;
+
+            li {
+                color: #9C9C9C;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+                padding: 25px 0px;
+                padding-bottom: 20px;
+                transition: all 0.3s ease;
+                border-bottom: 2px solid rgba(255, 255, 255, 0);
+                user-select: none;
+            }
+
+            .ative {
+                border-bottom: 2px solid #000;
+                color: #000;
+            }
+        }
+
+        hr {
+            background-color: #EFEFEF;
+        }
+
+        .label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+
+            a {
+                padding: 18px 30px;
+                font-size: 16px;
+                font-weight: 600;
+                color: #ffffff;
+                background-color: #226DD9;
+                border-radius: 15px;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                color: #5A7184;
+                pointer-events: none;
+                user-select: none;
+            }
+
+            input {
+                border: none;
+                margin-top: 5px;
+                width: 200px;
+                height: 40px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #000;
+                cursor: text;
+
+                &::placeholder {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: rgba(0, 0, 0, 0.349)
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+@include maxW(620px) {
+    .d-mobile {
+        display: block !important;
+    }
+
+}
+
+@include maxW(430px) {
+    .hero {
+        display: block;
+        background-color: transparent;
+        margin-top: 0;
+        padding-top: 100px;
+        &-content {
+            padding: 10px;
+        }
+        .space-hero {
+            display: none;
+        }
+
+        &-butn {
+            width: 100%;
+            padding: 15px 0px;
+            text-align: center;
+            background-color: #104874;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            border-radius: 15px;
+        }
+
+        .search {
+            display: none;
+        }
+
+        img {
+            display: none;
+            margin: 0;
+        }
+
+        .hero-img-mobile {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .tag-blue {
+            width: 215px;
+        }
+
+        h1 {
+            font-size: 36px;
+            padding-right: 30px;
+            line-height: 46px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 13px;
+            padding-right: 50px;
+            padding-bottom: 25px;
+        }
+    }
+}
